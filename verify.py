@@ -20,6 +20,7 @@ if __name__ == '__main__':
             module.switch_to_deploy()
 
     print(model)
+
     deploy_y = model(x)
     print('========================== The diff is')
-    print(((train_y - deploy_y) ** 2).sum())
+    print(((train_y - deploy_y)**2).sum())
